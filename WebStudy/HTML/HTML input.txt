@@ -1,0 +1,62 @@
+- 입력
+
+<input placeholder="안내문" maxlength="최대 문자수" size="입력창 길이">
+텍스트 입력 가능한 입력 필드, 인라인
++type 속성
+text: 한 줄 텍스트
+password: 텍스트 점으로 치환
+number: 숫자 입력, 증감 버튼, min="최솟값" max="최댓값" step="간격"
+color: 색상 선택
+button: 클릭, value="버튼 텍스트"
+radio, checkbox:
+<body>
+  <p>하나만 선택 가능</p>
+  <input type="radio" name="식별자">국어 
+  <input type="radio" name="식별자">영어 
+  <input type="radio" name="식별자">수학 
+
+  <p>모두 선택 가능</p>
+  <input type="checkbox" name="식별자">제육볶음 
+  <input type="checkbox" name="식별자">돈까스 
+  <input type="checkbox" name="식별자">떡볶이 
+</body>
+
+꼬리표
+<body>
+  <label>: 꼬리표
+    아이디
+    <input type="text">
+  </label>
+  <br>
+  <label for="pw">비밀번호</label>
+  <input id="pw" type="password">
+</body>
+
+드롭다운 메뉴
+<body>
+  <select size="화면에 표시될 항목수" multiple: 동시 선택>: 드롭다운 메뉴
+    <option value="서버 반영값" selected: 기본 선택>커피</option>: 개별 항목
+    <option>콜라</option>
+    <option>쥬스</option>
+    <option>생수</option>
+  </select>
+</body>
+
+여러 줄의 텍스트
+<textarea cols="가로 너비", rows="세로 너비">기본 텍스트</textarea>
+
+진척도
+<progress value="진척도" max="필요 작업량"></progress>
+
+버튼
+<button>버튼 텍스트</button>
+<input type="button">과 형태, 기능 차이 없음 
+
+- 폼
+
+<form method="post" action="server.php">입력 요소</form>
+입력 요소의 name 속성: 각 입력 요소의 역할 구별, 서버 반영값의 이름으로 필수
+<input type="submit" value="버튼 텍스트">: 클릭 시 서버로 값 전송
++ method 속성: 서버 전송 방식
+post: 전송값 주소창 표시 x, 길이 제한 x 
+get: 전송값 주소창 표시 o, 길이 제한 o 

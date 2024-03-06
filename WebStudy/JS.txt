@@ -1,0 +1,2 @@
+HTML 내부 작성 -> <script></script> 
+js문서로 연결

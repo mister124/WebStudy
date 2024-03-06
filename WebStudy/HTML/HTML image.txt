@@ -1,0 +1,43 @@
+- 이미지
+
+이미지
+<img src="IMAGE_URL" alt="대체 텍스트" width="너비" height="높이">
++파일 위치 지정
+이미지, 웹 문서 같은 폴더 -> <img src="image.png"> or <img src="./image.png">
+이미지가 상위 폴더 -> <img src="../image.png">
+이미지가 하위 폴더 -> <img src="하위폴더명/image.png"> or <img src="./하위폴더명/image.png"> 
+절대 경로 -> <img src="C:\images\image.png">
+
+자막
+<body>
+  <figure>
+    <img src="image.png">
+    <figcaption>자막</figcaption> : 자동 개행 
+  </figure>
+</body>
+왼쪽에 여백 조금 추가
+
+화면 크기별 이미지 출력
+<body>
+  <picture>
+    <source media="(max-width: 375px)" srcset="image1.png">
+    <source media="(max-width: 768px)" srcset="image2.png">
+    <source media="(max-width: 1024px)" srcset="image3.png">
+    <img src="image.png" alt="source의 모든 조건이 맞지 않음 or 브라우저 호환 문제">
+  </picture>
+</body>
+
+- 링크
+
+문서 이동
+<a href="link" target="_self" : 현재 탭, 기본값 or "_blank" : 새 탭>링크</a>
+
+전화, 메일
+<body>
+  <a href="tel:010-1234-5678">
+    전화 걸기
+  </a>
+  <a href="mailto:1234@naver.com">
+    메일 보내기
+  </a>
+</body>
