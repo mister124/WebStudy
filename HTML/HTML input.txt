@@ -1,4 +1,4 @@
-- 입력
+w- 입력
 
 <input placeholder="안내문" maxlength="최대 문자수" size="입력창 길이">
 텍스트 입력 가능한 입력 필드, 인라인
